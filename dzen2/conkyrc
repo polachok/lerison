@@ -1,0 +1,7 @@
+background no
+update_interval 3.0
+mail_spool /home/polachok/.mail
+out_to_console
+short_units
+TEXT
+^p(;-1)^fg(#c0d784)^i(battery.xbm)^p(;+2) ^fg(#ddd)${apm_battery_life}^fg() ^p(;-2)^fg(#c0d784)^i(cpuu.xbm)^p(;+2) ^fg(#ddd)${freq}^fg()Mhz^fg()^p(;-2)^fg(#c0d784)^i(net-wiredd.xbm)^p(;+2) ^fg(#ddd)${totaldown eth0}/^fg(#ddd)${totalup eth0} ^fg(#c0d784)^p(;+2)^i(clock.xbm)^p(;-1)^fg(#eee)${time %a %d %b} ^fg(#c0d784)${time %H:%M  }

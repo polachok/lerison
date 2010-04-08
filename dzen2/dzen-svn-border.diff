@@ -1,0 +1,63 @@
+Index: dzen.h
+===================================================================
+--- dzen.h	(revision 220)
++++ dzen.h	(working copy)
+@@ -52,7 +52,7 @@
+ 
+ /* title window */
+ struct TW {
+-	int x, y, width, height;
++	int x, y, width, height, border;
+ 
+ 	Window win;
+ 	Drawable drawable;
+Index: main.c
+===================================================================
+--- main.c	(revision 220)
++++ main.c	(working copy)
+@@ -356,6 +356,7 @@
+ static void
+ x_create_windows(void) {
+ 	XSetWindowAttributes wa;
++	XWindowChanges wc;
+ 	Window root;
+ 	int i;
+ 	XRectangle si;
+@@ -376,7 +377,9 @@
+ 
+ 	x_create_gcs();
+ 
++
+ 	/* window attributes */
++	wc.border_width = dzen.title_win.border;
+ 	wa.override_redirect = 1;
+ 	wa.background_pixmap = ParentRelative;
+ 	wa.event_mask = ExposureMask | ButtonReleaseMask | ButtonPressMask | ButtonMotionMask | EnterWindowMask | LeaveWindowMask | KeyPressMask;
+@@ -395,7 +398,8 @@
+ 			DefaultVisual(dzen.dpy, dzen.screen),
+ 			CWOverrideRedirect | CWBackPixmap | CWEventMask, &wa);
+ 	XStoreName(dzen.dpy, dzen.title_win.win, "dzen title");
+-
++        XSetWindowBorder(dzen.dpy, dzen.title_win.win, getcolor(dzen.fg));
++	XConfigureWindow(dzen.dpy,dzen.title_win.win , CWBorderWidth, &wc);
+ 	dzen.title_win.drawable = XCreatePixmap(dzen.dpy, root, dzen.title_win.width, 
+ 			dzen.line_height, DefaultDepth(dzen.dpy, dzen.screen));
+ 	XFillRectangle(dzen.dpy, dzen.title_win.drawable, dzen.rgc, 0, 0, dzen.title_win.width, dzen.line_height); 
+@@ -784,6 +788,7 @@
+ 	dzen.ret_val   = 0;
+ 	dzen.title_win.x = dzen.slave_win.x = 0;
+ 	dzen.title_win.y = 0;
++	dzen.title_win.border = 0;
+ 	dzen.title_win.width = dzen.slave_win.width = 0;
+ 	dzen.title_win.alignment = ALIGNCENTER;
+ 	dzen.slave_win.alignment = ALIGNLEFT;
+@@ -891,6 +896,9 @@
+ 		else if(!strncmp(argv[i], "-h", 3)) {
+ 			if(++i < argc) dzen.line_height= atoi(argv[i]);
+ 		}
++                else if(!strncmp(argv[i], "-b", 3)) {
++			if(++i < argc) dzen.title_win.border= atoi(argv[i]);
++		}
+ 		else if(!strncmp(argv[i], "-tw", 4)) {
+ 			if(++i < argc) dzen.title_win.width = atoi(argv[i]);
+ 		}

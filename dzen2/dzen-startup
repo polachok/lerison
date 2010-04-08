@@ -1,0 +1,23 @@
+#!/bin/sh
+LANG=C
+FONT='-artwiz-snap-normal-r-normal--11-*-*-*-*-*-iso10646-1'
+#FONT='-*-profont-*-*-*-*-11-*-*-*-*-*-iso10646-*'
+#FONT='-*-proggysquare-*-*-*-*-*-*-*-*-*-*-iso8859-*'
+BG="#2d2d2d"
+FG="#606060"
+
+#BG="#303030"
+#FG="#808080"
+
+SW=1280
+BAR=`xprop -root _OURICO_WINDOW|awk '{ print $5 }'`
+DZEN="dzen2 -fn $FONT -fg $FG -bg $BG  -y 1 -em $BAR"
+echo $DZEN
+pkill dzen 
+pkill conky
+X=900
+conky -c conkyrc.3 2>/dev/null| $DZEN -x $X -w $(($SW-$X-2)) -ta r -fg "#bfbfbf" &
+#./tagnames.sh|$DZEN -p -w 235 -ta l -bg "#2d2d2d" -fg "#606060" -x 1
+./tagnames.sh|$DZEN -p -w 235 -ta l -bg "#2d2d2d" -fg "#bfbfbf" -x 1
+#sh tagnames.sh|$DZEN -p -w 235 -ta l -fg "#808080" &
+#conky -c conkyrc 2>/dev/null| $DZEN -x $X -w $(($SW-$X)) -ta r &
