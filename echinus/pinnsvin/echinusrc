@@ -1,0 +1,149 @@
+Echinus*selected.fg: #ddd
+//Echinus*selected.fg: red
+Echinus*selected.bg: #2d2d2d
+Echinus*selected.border: #606060
+Echinus*selected.button: #92b19e
+
+Echinus*normal.fg: #2d2d2d
+Echinus*normal.bg: #2d2d2d
+Echinus*normal.border: #585858
+Echinus*normal.button: #585858
+
+Echinus*decoratetiled: 0
+Echinus*titlelayout: N--C
+! Echinus*titlelayout: T-N-IMC
+Echinus*outline: 0
+Echinus*sloppy: 1
+
+Echinus*font: snap-11
+! Echinus*font: Verdana-9
+! Echinus*title: 14
+
+Echinus*border: 1
+Echinus*opacity: 0
+
+Echinus*hidebastards: 1
+
+Echinus*deflayout: i
+
+Echinus*tags.number: 8
+Echinus*tags.name0: null
+Echinus*tags.name1: web
+Echinus*tags.name2: irc
+Echinus*tags.name3: dev
+Echinus*tags.name4: doc
+Echinus*tags.name5: gfx
+Echinus*tags.name6: misc
+Echinus*tags.name7: im
+
+Echinus*tags.layout0: m
+Echinus*tags.layout1: m
+Echinus*tags.layout2: m
+Echinus*tags.layout3: b
+Echinus*tags.layout5: f
+Echinus*tags.layout6: f
+
+Echinus*modkey: A
+Echinus*togglestruts: A + b
+Echinus*togglemonitor: A + grave
+Echinus*focusnext: A + j
+Echinus*focusprev: A + k
+Echinus*viewprevtag: A + Tab
+Echinus*viewlefttag: AS + Left
+Echinus*viewrightttag: AS + Right
+Echinus*quit: A + q
+Echinus*restart: AS + q = echinus
+Echinus*killclient: AS + c
+Echinus*togglefloating: A + space
+Echinus*iconify: AC + i
+Echinus*zoom: A + Return
+
+Echinus*view0: A + F1
+Echinus*view1: A + F2
+Echinus*view2: A + F3
+Echinus*view3: A + F4
+Echinus*view4: A + F5
+Echinus*view5: A + F6
+Echinus*view6: A + F7
+Echinus*view7: A + F8
+Echinus*view8: A + F9
+Echinus*view9: A + F10
+Echinus*view10: A + F11
+Echinus*view11: A + F12
+
+Echinus*tag0: AS + 1
+Echinus*tag1: AS + 2
+Echinus*tag2: AS + 3
+Echinus*tag3: AS + 4
+Echinus*tag4: AS + 5
+Echinus*tag5: AS + 6
+
+Echinus*toggletag0: AC + 1
+Echinus*toggletag1: AC + 2
+Echinus*toggletag2: AC + 3
+Echinus*toggletag3: AC + 4
+Echinus*toggletag4: AC + 5
+Echinus*toggletag5: AC + 6
+
+//Echinus*focusview6: A + s
+//Echinus*focusview7: A + o
+Echinus*focusview7: A + o
+
+Echinus*toggleview3: W + 4
+Echinus*toggleview2: W + 3
+Echinus*toggleview1: AS + w
+
+Echinus*setlayoutm: A + m
+Echinus*setlayoutf: AS + f
+Echinus*setlayouti: A + a
+Echinus*setlayoutb: A + u
+Echinus*setlayoutt: A + r
+
+Echinus*spawn0: A + t = urxvt -e screen
+//Echinus*spawn0: W + t = urxvt -e screen
+! Echinus*spawn7: A + z = tmenu
+Echinus*spawn1: A + p = pmenu
+Echinus*spawn2: A + y = ssh-ui
+Echinus*spawn3: A + l = slock
+! Echinus*spawn4: XF86AudioPlay = player-control -t
+Echinus*spawn4: XF86AudioPlay = player-control -t
+Echinus*spawn5: XF86AudioPrev = player-control -r
+Echinus*spawn6: XF86AudioNext = player-control -f
+Echinus*spawn7: A + n = spm -m
+
+Echinus*decmwfact: A + minus = -0.05
+Echinus*incmwfact: A + equal = +0.05
+Echinus*decnmaster: AS + d = -1
+Echinus*incnmaster: AS + i = +1
+
+Echinus*frame*deflayout: m
+Echinus*frame*setlayoutm: W + m
+Echinus*frame*setlayoutf: W + f
+Echinus*frame*setlayouti: W + a
+Echinus*frame*setlayoutb: W + u
+Echinus*frame*setlayoutt: W + r
+Echinus*frame*focusnext: W + j
+Echinus*frame*focusprev: W + k
+Echinus*frame*decmwfact: W + minus = -0.05
+Echinus*frame*incmwfact: W + equal = +0.05
+
+Echinus*command: urxvt
+
+Echinus*rule0: Firefox.* web 0 1
+Echinus*rule1: htop.* misc 1 1
+Echinus*rule2: fbreader.* dev 0 1
+Echinus*rule3: evince.* doc 0 1
+!Echinus*rule4: Mplayer.* NULL 0 0
+Echinus*rule5: Gimp.* gfx 1 1
+Echinus*rule6: gcolor.* NULL 1 1
+Echinus*rule7: stardict.* NULL 1 1
+Echinus*rule8: feh.* NULL 1 1
+Echinus*rule9: Opera.* web 0 1
+Echinus*rule10: Wee.* irc 0 1
+! Echinus*rule11: mocp.* NULL 1 0
+Echinus*rule12: Epiphany.* web 0 1
+Echinus*rule13: Gajim.* im 1 1
+Echinus*rule14: .*nowar.* NULL 1 0
+Echinus*rule15: Iceweasel.* web 0 1
+Echinus*rule16: Chromium-browser.* web 0 1
+Echinus*rule17: Pidgin.* im 1 1
