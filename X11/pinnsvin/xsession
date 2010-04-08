@@ -1,0 +1,100 @@
+#!/bin/sh
+PATH=~/.cw/def:$PATH:$HOME/bin
+ulimit -c unlimited
+#export SSH_ASKPASS=/usr/bin/gtk2-ssh-askpass
+export SSH_ASKPASS=/home/polachok/bin/gtk2-ssh-askpass
+export GTK_IM_MODULE=xim
+xset +fp ~/.fonts/artwiz-rus
+xset +fp ~/.fonts/ibm/ibm-vio
+xset +fp ~/.fonts/profont-ru
+xset +fp ~/.fonts/ruscle
+#xset +fp ~/.fonts/uniread/
+xsetroot -solid "#2e2e2e"
+#feh --bg-center ~/share/wallpapers/redswitch.png &
+#feh --bg-scale ~/share/wallpapers/CCCP-hackstyle.png &
+#feh --bg-scale ~/share/wallpapers/Mac_Style_Orange_by_sohxc.jpg &
+#feh --bg-scale /home/polachok/share/wallpapers/In_Spireinv.jpg 
+#feh --bg-scale ~/share/wallpapers/pixbypixwpeb.png
+#feh --bg-scale ~/share/wallpapers/Organic_1600.jpg &
+eval `ssh-agent -s`
+ssh-add < /dev/null 
+#ivman-launch &
+eval `grep "export PATH" ~/.zshrc`
+#eval `dbus-launch --sh-syntax --exit-with-session`
+#oboinus --restore &
+#feh --bg-scale ~/share/wallpapers/In_Spireinv.jpg &
+#ivman -d > ~/.ivman.log &
+#xgamma -gamma 1.1 &
+export LANG=en_US.UTF-8
+#firefox&
+#export LANG=POSIX
+#java -jar ~/bin/toonel.jar -t &
+#feh --bg-tile ~/share/wallpapers/stripes.png &
+#feh --bg-scale ~/share/wallpapers/Macpaper_by_UnnamedTrollgrey.jpg &
+#feh --bg-scale ~/share/wallpapers/radio_route_10244.jpg &
+#feh --bg-scale ~/share/wallpapers/CCCP-hackstyle.png &
+#feh --bg-scale ~/share/wallpapers/whodys_way_revised.jpg &
+# feh --bg-scale ~/share/wallpapers/ERASE.jpg &
+# xsetroot -cursor_name left_ptr &
+# xsetroot -solid "#4d4d4d"
+#feh --bg-scale ~/share/wallpapers/Underwater_City_by_Bi0shadow.png &
+#feh --bg-scale ~/share/wallpapers/Macpaper_by_UnnamedTrollgrey.jpg &
+#feh --bg-scale ~/share/wallpapers/wsvistagrass1600x1200rp0.jpg &
+#feh --bg-scale ~/share/wallpapers/120119silvatrez11280inv.jpg &
+#mpdupdater&
+#mpd &
+#mocp -S &
+setxkbmap -option 'terminate:ctrl_alt_bksp' 
+setxkbmap -layout 'us,ru(winkeys)' 
+setxkbmap -option 'grp:caps_toggle,grp_led:scroll,compose:lwin' 
+xmodmap ~/.xmodmaprc &
+autocutsel -selection PRIMARY -fork &
+sh ~/.synaptics
+autocutsel -selection CLIPBOARD -fork & 
+pmenu-gen&
+sh ~/.xrandr
+sh ~/.fehbg
+#swarp 1280 900 &
+unclutter -idle 1 &
+xrdb ~/.Xdefaults || echo shit
+#sudo root-tail -g 1200x100+20-20 --fork --update --noflicker -fn -artwiz-snap-*-*-*-*-11-*-*-*-*-*-koi8-r /var/log/messages,#a3a79f&
+#urxvt -geometry 43x40-4+7 -e ncmpc&
+#(sleep 8 ; urxvt -geometry 147x50-40-32 -e mutt -y & urxvt -T htop -geometry 147x50-40-32 -e screen -c ~/.screenrc.misc& urxvt -T WeeChat -e screen -c ~/.screenrc.wee &) &
+#(sleep 2; urxvt -T htop -geometry 147x50-40-32 -e screen -c ~/.screenrc.misc&) &
+(sleep 2; urxvt -T htop -geometry 139x37-66+143  -e screen -c ~/.screenrc.misc&) &
+#xbattbar-acpi -p top -I "#55aaaa" -O "#4E7878" -o "#4E7878" -i "#55aaaa" -S 0 -C 0 -a -s 4 &
+#LANG=C statusd | dzen2 -fn "-artwiz-snap-*-*-*-*-11-*-*-*-*-*-iso10646-1" -ta r -y 5 -x 780 -bg "#2e3436" -w 500 &
+#cat ~/.fwm | dzen2 -fn "-artwiz-snap-*-*-*-*-11-*-*-*-*-*-koi8-r" -ta l -y 5 -w 400 -bg "#2e3436" &
+#(sleep 1; ourico -fn snap -bd 0 -h 13 -x 30 -w 800 -df "#92b19e" -sd &) &
+#skbgui -w 30 -fn snap &
+#( cd ~/.dzen2 && ./dzen.sh ) &
+#urxvt -e screen 
+#(sleep 2; urxvt -e mutt & urxvt -e mocp & urxvt -e lc -T mc & urxvt -e htop & urxvt -e weechat-curses -T weechat & gimp & opera &)
+#ourico & dtclock &
+#. ~/.profile
+ourico &
+( sleep 1; cd ~/.dzen4 && sh ./dzen-startup ) &
+#exec xterm
+#exec echinus 
+#urxvt -e gdb echinus
+#didiwiki &
+#gnome-session
+#xterm & urxvt &
+#openbox
+#ion3
+#tint2 &
+#xmonad
+echinus
+#awesome
+#dwm
+urxvt
+#LANG=POSIX twm
+#openbox
+#LANG=POSIX twm
+#hackedbox
+#xrdb ~/.Xdefaults || echo shit
+#gdb dwm
+#export PATH=/usr/local/bin:$PATH
+#until wmii; do
+#true
+#done

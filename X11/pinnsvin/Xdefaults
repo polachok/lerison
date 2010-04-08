@@ -1,0 +1,79 @@
+!*foreground: lightgray
+!*background: #2e2e2e
+XTerm*foreground: lightgray
+XTerm*background: #2e2e2e
+XTerm*font:-*-consolas-book-r-normal-*-14-*-*-*-*-*-iso10646-*
+XTerm*boldFont:-*-consolas-book-r-normal-*-14-*-*-*-*-*-iso10646-*
+! -*-fixed-medium-r-*-*-14-*-*-*-*-70-koi8-*
+XTerm*boldMode: false
+XTerm*colorBDMode: true
+XTerm*colorULMode: true
+XTerm*colorBD: #a1913f
+XTerm*colorUL: #4d96a8
+XTerm*loginShell: true
+XTerm*scrollBar: false
+! nice colors
+xterm*color0: #101010
+xterm*color1: #ff0000
+xterm*color2: #6b863f
+xterm*color3: #aa9943
+xterm*color4: #526cA0
+xterm*color5: #706c9a
+xterm*color6: #529eb1
+xterm*color7: #d3d7cf
+xterm*color8: #222222
+xterm*color9: #a83b3b
+xterm*color10: #49880e
+xterm*color11: #efef60
+xterm*color12: #3c3cdf
+xterm*color13: #826ab1
+xterm*color14: #a1cdcd
+xterm*color15: #f0f0f0
+
+
+xterm*metaSendsEscape: true
+Xcursor.theme: jimmac
+
+URxvt*foreground: lightgray
+URxvt*background: #2e2e2e
+!URxvt*font:-*-consolas-book-r-normal-*-14-*-*-*-*-*-iso10646-*
+!URxvt*boldFont:-*-consolas-book-r-normal-*-14-*-*-*-*-*-iso10646-*
+!URxvt*font:-*-fixed-medium-*-*-*-14-*-*-*-*-*-iso10646-*
+!URxvt*boldFont:-*-fixed-medium-*-*-*-14-*-*-*-*-*-iso10646-*
+URxvt*font:-*-terminus-medium-r-*-*-14-*-*-*-*-*-iso10646-1
+!URxvt*font: -*-uniread-medium-r-*-*-10-*-*-*-*-*-iso10646-*
+! -*-fixed-medium-r-*-*-14-*-*-*-*-70-koi8-*
+URxvt*boldMode: false
+URxvt*colorBDMode: true
+URxvt*colorULMode: true
+URxvt*colorBD: #aa9943
+URxvt*colorUL: #92b19e
+URxvt*loginShell: true
+URxvt*scrollBar: false
+! nice colors
+URxvt*color0:         #191919
+URxvt*color8:         #252525
+URxvt*color1:         #803232
+URxvt*color9:         #982b2b
+URxvt*color2:         #5b762f
+URxvt*color10:        #89b83f
+URxvt*color3:         #aa9943
+URxvt*color11:        #efef60
+URxvt*color4:         #324c80
+URxvt*color12:        #2b4f98
+URxvt*color5:         #706c9a
+URxvt*color13:        #826ab1
+URxvt*color6:         #92b19e
+URxvt*color14:        #a1cdcd
+URxvt*color7:         #ffffff
+URxvt*color15:        #dddddd
+URxvt*metaSendsEscape: true
+!URxvt*depth: 32
+!URxvt*background: rgba:0000/0000/0000/dddd
+Xft.antialias:          1
+Xft.hinting:            1
+Xft.rgba:               none
+Xft.hintstyle:          hintfull
+! URxvt*foreground:     #dddddd
+! URxvt*background:     #222222
+
